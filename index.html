@@ -1,0 +1,874 @@
+
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Strata Cleaning Services Sydney | Westlink</title>
+
+  <meta name="description" content="Keep shared residential spaces clean, tidy and welcoming with tailored strata cleaning services from Westlink. Discuss your property's cleaning needs today.">
+
+  <style>
+    :root {
+      --navy: #123047;
+      --blue: #176b87;
+      --teal: #dff4f1;
+      --light: #f4f8fa;
+      --ink: #263744;
+      --muted: #5d6d78;
+      --white: #ffffff;
+      --line: #dce6eb;
+      --accent: #f0b34d;
+      --radius: 18px;
+      --shadow: 0 14px 40px rgba(18, 48, 71, .10);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      line-height: 1.65;
+      background: var(--white);
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .container {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      background: var(--navy);
+      color: var(--white);
+      font-size: .9rem;
+    }
+
+    .topbar-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 9px 0;
+      flex-wrap: wrap;
+    }
+
+    .topbar a {
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+    }
+
+    .brand {
+      color: var(--navy);
+      font-weight: 800;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+
+    .brand span {
+      display: block;
+      color: var(--muted);
+      font-size: .75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 700;
+      font-size: .94rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 20px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 800;
+      border: 2px solid transparent;
+      transition: transform .18s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #172b38;
+    }
+
+    .btn-outline {
+      border-color: rgba(255,255,255,.7);
+      color: var(--white);
+    }
+
+    .hero {
+      background: linear-gradient(
+        120deg,
+        rgba(11,37,56,.96),
+        rgba(23,107,135,.86)
+      );
+      color: var(--white);
+      padding: 82px 0 78px;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 44px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 6px 12px;
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: 999px;
+      font-size: .82rem;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.2;
+      color: var(--navy);
+      margin: 0 0 18px;
+      letter-spacing: -.025em;
+    }
+
+    .hero h1 {
+      color: var(--white);
+      font-size: clamp(2.2rem, 4.5vw, 3.65rem);
+      margin-top: 18px;
+    }
+
+    .hero p {
+      font-size: 1.08rem;
+      color: rgba(255,255,255,.88);
+      max-width: 650px;
+      margin-bottom: 25px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .hero-card {
+      background: rgba(255,255,255,.10);
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: var(--radius);
+      padding: 28px;
+    }
+
+    .hero-card h2 {
+      color: var(--white);
+      font-size: 1.3rem;
+    }
+
+    .hero-card li {
+      margin: 8px 0;
+    }
+
+    section {
+      padding: 72px 0;
+    }
+
+    .section-soft {
+      background: var(--light);
+    }
+
+    .section-kicker {
+      color: var(--blue);
+      font-size: .82rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .09em;
+      margin-bottom: 10px;
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin-bottom: 34px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(1.8rem, 3.2vw, 2.55rem);
+    }
+
+    .section-heading p {
+      color: var(--muted);
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 42px;
+      align-items: start;
+    }
+
+    .intro-panel {
+      padding: 30px;
+      background: var(--teal);
+      border-radius: var(--radius);
+    }
+
+    .check-list {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+
+    .check-list li {
+      padding-left: 30px;
+      position: relative;
+      margin: 12px 0;
+    }
+
+    .check-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--blue);
+      font-weight: 900;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 25px;
+      box-shadow: 0 6px 22px rgba(18,48,71,.04);
+    }
+
+    .card .icon {
+      display: grid;
+      place-items: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      background: var(--teal);
+      color: var(--blue);
+      font-size: 1.35rem;
+      margin-bottom: 17px;
+    }
+
+    .card h3 {
+      font-size: 1.16rem;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .96rem;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .step {
+      border-top: 4px solid var(--blue);
+      padding: 23px;
+      background: var(--white);
+      border-radius: 0 0 14px 14px;
+      box-shadow: 0 6px 22px rgba(18,48,71,.05);
+    }
+
+    .num {
+      display: inline-grid;
+      place-items: center;
+      width: 38px;
+      height: 38px;
+      background: var(--navy);
+      color: var(--white);
+      border-radius: 50%;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    .quote-band {
+      background: linear-gradient(120deg, var(--navy), var(--blue));
+      color: var(--white);
+      padding: 42px;
+      border-radius: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+    }
+
+    .quote-band h2 {
+      color: var(--white);
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+    }
+
+    .quote-band p {
+      color: rgba(255,255,255,.86);
+      margin: 0;
+      max-width: 650px;
+    }
+
+    .faq-list {
+      max-width: 900px;
+    }
+
+    details {
+      border-bottom: 1px solid var(--line);
+      padding: 19px 0;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 800;
+      color: var(--navy);
+    }
+
+    details p {
+      margin: 12px 0 0;
+      color: var(--muted);
+    }
+
+    .final-cta {
+      text-align: center;
+      background: var(--teal);
+      border-radius: 24px;
+      padding: 45px 25px;
+    }
+
+    .final-cta p {
+      max-width: 720px;
+      margin: 0 auto 22px;
+      color: var(--muted);
+    }
+
+    footer {
+      background: #0d2638;
+      color: rgba(255,255,255,.8);
+      padding: 30px 0;
+      font-size: .92rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    footer a {
+      color: var(--white);
+    }
+
+    @media (max-width: 820px) {
+      .hero-grid,
+      .intro-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cards,
+      .steps {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .nav {
+        padding: 16px 0;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav-links {
+        gap: 14px;
+      }
+
+      .quote-band {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 30px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .container {
+        width: calc(100% - 28px);
+      }
+
+      .hero {
+        padding: 58px 0;
+      }
+
+      section {
+        padding: 52px 0;
+      }
+
+      .cards,
+      .steps {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card {
+        padding: 22px;
+      }
+
+      .topbar-inner {
+        flex-direction: column;
+        gap: 4px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Cleaning support for shared residential properties</span>
+      <a href="https://share.google/0e8NNw74PQMK7CEsk"
+         target="_blank" rel="noopener noreferrer">
+        View Westlink Business Profile ↗
+      </a>
+    </div>
+  </div>
+
+  <header>
+    <div class="container nav">
+      <a class="brand"
+         href="https://westlinkservices.com.au/services/strata-cleaning-services-sydney/">
+        Westlink Cleaning Services
+        <span>Strata & Shared-Property Cleaning</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#process">How It Works</a>
+        <a href="#faqs">FAQs</a>
+        <a class="btn btn-primary"
+           href="https://westlinkservices.com.au/services/strata-cleaning-services-sydney/">
+          Request a Quote
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Shared Spaces • Routine Care • Tailored Plans</span>
+
+          <h1>Strata Cleaning Services Sydney for Cleaner Shared Properties</h1>
+
+          <p>
+            Clean common areas help residents, visitors and property managers
+            feel welcome. Westlink helps you plan cleaning for shared spaces
+            in your building, from entryways and hallways to lifts, floors
+            and outdoor areas.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary"
+               href="https://westlinkservices.com.au/services/strata-cleaning-services-sydney/">
+              Explore Cleaning Services
+            </a>
+
+            <a class="btn btn-outline"
+               href="https://share.google/0e8NNw74PQMK7CEsk"
+               target="_blank" rel="noopener noreferrer">
+              View Westlink Profile
+            </a>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <h2>Common Areas We Can Discuss</h2>
+          <ul>
+            <li>Building entrances, lobbies and hallways</li>
+            <li>Stairwells, lifts and shared touchpoints</li>
+            <li>Floors, carpets and internal glass</li>
+            <li>Bin areas and suitable outdoor surfaces</li>
+            <li>Cleaning schedules based on building needs</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section>
+      <div class="container intro-grid">
+        <div>
+          <div class="section-kicker">A Practical Approach</div>
+
+          <h2>What Is Strata Cleaning?</h2>
+
+          <p>
+            Strata cleaning focuses on the shared areas of apartment buildings,
+            townhouses and other managed properties. These spaces may include
+            entrances, corridors, staircases, lifts, shared bathrooms, bin
+            rooms and outdoor paths.
+          </p>
+
+          <p>
+            A clear cleaning plan helps keep these areas tidy and usable.
+            The right tasks and visit frequency depend on property size,
+            resident numbers, foot traffic, surface types and the priorities
+            set by the strata manager or committee.
+          </p>
+
+          <p>
+            For service details, visit
+            <a href="https://westlinkservices.com.au/services/strata-cleaning-services-sydney/">
+              <strong>strata cleaning services Sydney</strong>
+            </a>.
+          </p>
+        </div>
+
+        <div class="intro-panel">
+          <h3>Why a Planned Cleaning Routine Helps</h3>
+
+          <ul class="check-list">
+            <li>Keeps shared spaces neat and presentable</li>
+            <li>Helps manage everyday dust, dirt and marks</li>
+            <li>Supports a welcoming resident experience</li>
+            <li>Makes cleaning tasks and expectations clearer</li>
+            <li>Gives high-traffic areas suitable attention</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-soft" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-kicker">Services to Consider</div>
+          <h2>Cleaning for the Areas Residents Use Every Day</h2>
+
+          <p>
+            Every property is different. Agree on the required tasks and
+            service frequency before work begins so the cleaning plan matches
+            the building's layout and needs.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="icon" aria-hidden="true">⌂</div>
+            <h3>Entrances, Lobbies & Hallways</h3>
+            <p>
+              Routine attention to entry areas, corridors, skirting boards,
+              doors and visible marks helps keep shared spaces orderly.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="icon" aria-hidden="true">↕</div>
+            <h3>Lifts, Stairs & Handrails</h3>
+            <p>
+              High-use areas can collect dust, fingerprints and everyday dirt.
+              A suitable task list helps these spaces stay presentable.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="icon" aria-hidden="true">▦</div>
+            <h3>Floors & Carpets</h3>
+            <p>
+              Floor care may include vacuuming, mopping and suitable carpet
+              cleaning, based on the material and agreed scope.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="icon" aria-hidden="true">▤</div>
+            <h3>Windows & Glass</h3>
+            <p>
+              Internal glass, entry doors and accessible glass surfaces can
+              be included where requested and suitable for the property.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="icon" aria-hidden="true">♧</div>
+            <h3>Outdoor Shared Areas</h3>
+            <p>
+              Paths, courtyards and suitable exterior surfaces may need
+              periodic cleaning to remove built-up dirt and grime.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="icon" aria-hidden="true">♲</div>
+            <h3>Bin Rooms & Shared Facilities</h3>
+            <p>
+              Shared utility spaces can be added to the cleaning plan
+              according to access, hygiene needs and the agreed scope.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-kicker">Built Around Your Building</div>
+          <h2>How to Choose a Suitable Cleaning Schedule</h2>
+          <p>
+            A useful schedule reflects real building use instead of applying
+            the same routine to every property.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Consider Daily Foot Traffic</h3>
+            <p>
+              Busy entrances, lifts and corridors may need more frequent
+              attention than areas used less often.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Review Surfaces and Facilities</h3>
+            <p>
+              Carpets, tiles, glass, bin areas and outdoor spaces have
+              different cleaning needs and methods.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Agree on Priorities</h3>
+            <p>
+              Strata managers and committees can list essential tasks,
+              preferred visit times, access details and periodic
+              deep-cleaning needs.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-soft" id="process">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-kicker">Simple Next Steps</div>
+          <h2>How the Cleaning Plan Can Be Arranged</h2>
+          <p>
+            Clear communication helps everyone understand what is included
+            and how the property's needs will be handled.
+          </p>
+        </div>
+
+        <div class="steps">
+          <article class="step">
+            <div class="num">1</div>
+            <h3>Discuss the Property</h3>
+            <p>
+              Share the building type, common areas, main concerns and any
+              access or timing requirements.
+            </p>
+          </article>
+
+          <article class="step">
+            <div class="num">2</div>
+            <h3>Confirm the Scope</h3>
+            <p>
+              Identify the tasks, surfaces, visit frequency and any
+              additional services that may be needed.
+            </p>
+          </article>
+
+          <article class="step">
+            <div class="num">3</div>
+            <h3>Request a Tailored Quote</h3>
+            <p>
+              Ask for a quote based on the agreed requirements so you can
+              review the proposed service before proceeding.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="quote-band">
+          <div>
+            <h2>Need a Cleaning Plan for Your Shared Property?</h2>
+            <p>
+              Talk through your building's common areas, cleaning priorities
+              and preferred schedule. Discuss the service scope before
+              deciding on the next step.
+            </p>
+          </div>
+
+          <a class="btn btn-primary"
+             href="https://westlinkservices.com.au/services/strata-cleaning-services-sydney/">
+            Discuss Your Requirements
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-soft" id="faqs">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-kicker">Helpful Answers</div>
+          <h2>Frequently Asked Questions</h2>
+          <p>
+            These answers cover common points to discuss when arranging
+            shared-property cleaning.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <details>
+            <summary>What does strata cleaning usually include?</summary>
+            <p>
+              It can include agreed cleaning tasks for shared entrances,
+              lobbies, corridors, stairwells, lifts, floors, glass, bin rooms
+              and outdoor common areas. The final scope depends on the
+              property and service agreement.
+            </p>
+          </details>
+
+          <details>
+            <summary>How often should common areas be cleaned?</summary>
+            <p>
+              There is no single schedule for every building. Foot traffic,
+              resident numbers, facilities and the strata committee's
+              priorities all affect the right frequency.
+            </p>
+          </details>
+
+          <details>
+            <summary>What affects the cost of strata cleaning?</summary>
+            <p>
+              Pricing may depend on property size, the number and type of
+              common areas, required tasks, visit frequency, surface types
+              and any specialist cleaning requested. Ask for a quote based
+              on your building's needs.
+            </p>
+          </details>
+
+          <details>
+            <summary>Can carpet and outdoor surface cleaning be included?</summary>
+            <p>
+              These tasks can be discussed as part of the scope. The suitable
+              method depends on the carpet or surface material, its condition
+              and access to the area.
+            </p>
+          </details>
+
+          <details>
+            <summary>How can I contact Westlink Strata cleaning Services Sydney?</summary>
+            <p>
+              Visit the
+              <a href="https://westlinkservices.com.au/services/strata-cleaning-services-sydney/">
+                strata cleaning service page
+              </a>
+              or open the
+              <a href="https://share.google/0e8NNw74PQMK7CEsk"
+                 target="_blank" rel="noopener noreferrer">
+                Westlink Strata cleaning Services Sydney business profile
+              </a>
+              to view the listing.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="final-cta">
+          <h2>Plan Cleaner, More Welcoming Common Areas</h2>
+
+          <p>
+            Every building has its own cleaning priorities. Share the areas
+            you want maintained and the schedule you have in mind, then
+            request a quote based on your requirements.
+          </p>
+
+          <a class="btn btn-primary"
+             href="https://westlinkservices.com.au/services/strata-cleaning-services-sydney/">
+            Visit the Strata Cleaning Service Page
+          </a>
+
+          <p style="margin-top:16px;">
+            You can also view
+            <a href="https://share.google/0e8NNw74PQMK7CEsk"
+               target="_blank" rel="noopener noreferrer">
+              <strong>Westlink Strata cleaning Services Sydney</strong>
+            </a>
+            on the business profile.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© 2026 Westlink Cleaning Services</span>
+
+      <span>
+       
+          Strata Cleaning Service Details
+        </a>
+        ·
+        
+         
+          Business Profile
+        </a>
+      </span>
+    </div>
+  </footer>
+
+</body>
+</html>
